@@ -2,6 +2,11 @@ const express= require('express');
 const taskSchema = require('../models/taskSchema');
 const { addTask, getTask, updateTask, deleteTask } = require('../controllers/taskController');
 const router= express.Router();
+const cors= require('cors');
+
+app.use(cors({
+    origin: ["http://localhost:5173", "https://todoer-7jus.onrender.com"],
+}));
 
 // GET ALL TASKS OF A USER
 // router.post('/getTasks', async(req,res)=>{

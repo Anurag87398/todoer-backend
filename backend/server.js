@@ -18,7 +18,7 @@ const app= express();
 // MIDDLEWARE
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:5173", "http://todoer.onrender.com"],
+    origin: ["http://localhost:5173", "https://todoer-7jus.onrender.com"],
 }));
 app.use("/api", taskRoutes);
 app.use("/api", verificationRoutes);
