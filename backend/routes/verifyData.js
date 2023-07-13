@@ -5,7 +5,7 @@ const { signUp, login } = require('../controllers/verifyingController');
 const router= express.Router();
 const cors= require('cors');
 
-app.use(cors({
+router.use(cors({
     origin: ["http://localhost:5173", "https://todoer-7jus.onrender.com"],
 }));
 
